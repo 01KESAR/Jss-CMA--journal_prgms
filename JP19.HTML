@@ -1,0 +1,19 @@
+Write a program to rectangle scaling using canvas
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas</h1>
+<h2>The scale() Method</h2>
+<canvas id="myCanvas" width="300" height="150" style="border:6px solid 
+red"></canvas>
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+ctx.strokeStyle="red";
+ctx.strokeRect(5, 5, 25, 15);
+ctx.scale(2, 2);
+ctx.strokeRect(5, 5, 25, 15);
+</script> 
+</body>
+</html>
