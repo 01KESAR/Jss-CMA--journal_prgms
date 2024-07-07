@@ -1,0 +1,25 @@
+ Write a program to rotate a small image repeatedly
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rotating image</title>
+<style type="text/css">
+#my-img {
+animation: rotateImg 2s linear infinite;
+}
+@keyframes rotateImg {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(359deg);
+}
+}
+</style>
+</head>
+<body>
+<h1>Rotating image repeatedly</h1>
+<img id="my-img" src="mangooo.jpg" height="50px" width="70px"/>
+</body>
+</html>
