@@ -1,0 +1,22 @@
+Write a program to create line and rectangle using Canvas tag
+
+<html>
+<head></head>
+<body>
+<div align="center">
+<canvas id="mycan" width="300" height="300" style="border:5px solid blue;">
+</canvas>
+</div>
+<script>
+const canvas=document.getElementById("mycan");
+const ctx=canvas.getContext("2d");
+ctx.beginPath();
+ctx.lineWidth="6";
+ctx.strokeStyle="brown";
+ctx.rect(40,20,200,150);
+ctx.moveTo(100,200);
+ctx.lineTo(200,200);
+ctx.stroke();
+</script>
+</body>
+</html>
