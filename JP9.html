@@ -1,0 +1,17 @@
+write a javascript prgm to display current date & time 
+
+<html>
+<head>
+<title>Day,Date,Time</title>
+</head>
+<body>
+<script>
+var d=new Date();
+document.write(d);
+document.write("<br>Today date is:",d.getDate());
+var day=["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","saturday"];
+document.write("<br>Today is:",day[d.getDay()]);
+document.write("<br>current Time is:",d.getMinutes(),":",d.getHours(),":",d.getSeconds());
+</script>
+</body>
+</html>
