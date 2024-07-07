@@ -1,0 +1,22 @@
+write a prgm to create Bezier Curves
+<html>
+<body>
+<h1>program to create bezier curve using canvas</h1>
+<div align="center">
+<canvas id="a" width="500"height="300"style="border:5px solid red;">
+</canvas>
+</div>
+<script>
+const c=document.getElementById("a");
+const ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(20,20);
+ctx.lineWidth="4";
+ctx.bezierCurveTo(20,100,200,100,200,20);
+ctx.moveTo(50,80);
+ctx.lineWidth="5";
+ctx.quadraticCurveTo(90,500,250,20);
+ctx.stroke();
+</script>
+</body>
+</html>
