@@ -1,0 +1,32 @@
+Create a web page with 2 images which alternatively changes on mouse 
+over using CSS.
+
+<html>
+<head>
+<title></title>
+<style>
+ .image1{
+ background-image: url("mangooo.jpg");
+ width: 500px;
+ height: 500px;
+ }
+ .image2{
+ background-image: url("pop.jpg");
+ width: 500px;
+ height: 500px;
+ }
+ .image1:hover{
+ background-image: url("pop.jpg");
+ }
+ .image2:hover{
+ background-image: url("mangooo.jpg");
+ }
+ </style>
+</head>
+<body>
+ <h1 style="color:darkred;">
+ swapping of the images using mouse pointer</h1>
+ <img class="image1"/>
+ <img class="image2"/>
+</body>
+</html>
