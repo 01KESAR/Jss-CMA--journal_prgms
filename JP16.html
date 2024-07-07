@@ -1,0 +1,17 @@
+Write a program to create draw linear Gradient
+
+<html>
+<head></head>
+<body>
+<canvas id="mycan" width="300" height="300" style="border:5px solid red;">
+</canvas>
+<script>
+const c=document.getElementById("mycan");
+const ctx=c.getContext("2d");
+const grd=ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"purple");
+grd.addColorStop(1,"white");ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+</script>
+</body>
+</html>
