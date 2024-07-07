@@ -1,0 +1,20 @@
+Write a program to rectangle rotation
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas</h1>
+<h2>The rotate() Method</h2>
+<canvas id="myCanvas" width="300" height="150" style="border:2px solid 
+red"></canvas>
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+ctx.fillStyle="red";
+ctx.fillRect(15,15,150,150);
+ctx.rotate(20 * Math.PI / 
+180);ctx.fillStyle="black";
+ctx.fillRect(50, 20, 100, 50);
+</script>
+</body>
+</html>
